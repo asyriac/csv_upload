@@ -48,3 +48,9 @@ module.exports.view_csv = async (req, res) => {
     id: req.params.id,
   });
 };
+
+module.exports.not_found = (req, res) => {
+  return res.render("error", {
+    title: "Oops!",
+  });
+};
